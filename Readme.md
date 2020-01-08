@@ -71,12 +71,12 @@ Left associativity
 
 Precedence of operators
 
-## Part VI: [Arithmetic with Parenthesis - Recursion](https://ruslanspivak.com/lsbasi-part6/)
+## (Memorize) Part VI: [Arithmetic with Parenthesis - Recursion](https://ruslanspivak.com/lsbasi-part6/)
 Evaluate: `7 + 3 * (10 / (12 / (3 + 1) - 1))` using recursion
 
 Recursive-descent parser
 
-## Part VII: [Arithmetic with Parenthesis - AST](https://ruslanspivak.com/lsbasi-part7/)
+## (Memorize) Part VII: [Arithmetic with Parenthesis - AST](https://ruslanspivak.com/lsbasi-part7/)
 Evaluate: `7 + 3 * (10 / (12 / (3 + 1) - 1))` using AST
 
 Parse tree (Concrete syntax tree)
@@ -89,10 +89,15 @@ Depth-first traversal: preorder, inorder, postorder
 
 Visitor design pattern
 
-## Part VIII: [Unary operator](https://ruslanspivak.com/lsbasi-part8/)
+## (End of Calculator) Part VIII: [Unary operator](https://ruslanspivak.com/lsbasi-part8/)
 Evaluate: `-3 + 8`
 
 Unary operator
+
+Grammar Example:
+	expr: term ((PLUS | MINUS) term )*
+	term: factor ((MUL | DIV) factor )*
+	factor: (PLUS|MINUS) factor | INTEGER | LPAREN expr RPAREN
 
 ## Part IX: [Sequence Code Block](https://ruslanspivak.com/lsbasi-part9/)
 Evaluate: 
